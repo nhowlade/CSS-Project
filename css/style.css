@@ -1,0 +1,18 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px; /* Allows our browser to start clean */
+    box-sizing: border-box; /*padding of the box are no longer added to the total width or height of the box */
+} 
+
+body {
+    
+}
