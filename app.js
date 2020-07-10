@@ -4,7 +4,7 @@ const express = require('express');
 
 const app = express();
 const errorController = require('./controllers/error');
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 const routeDir = require('./helpers/path');
