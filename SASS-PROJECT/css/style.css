@@ -45,7 +45,7 @@ body {
   height: 3.5rem; }
 
 .heading-primary {
-  color: #fff;
+  color: #ff6;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -119,7 +119,7 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #ff6;
   color: #777; }
 
 .btn::after {
@@ -135,7 +135,7 @@ body {
   transition: all .4s; }
 
 .btn--white::after {
-  background-color: #fff; }
+  background-color: #ff6; }
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
