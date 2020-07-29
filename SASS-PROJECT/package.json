@@ -4,7 +4,7 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "c:sass": "node-sass sass/main.scss css/style.css"
+    "sass": "node-sass sass/main.scss css/style.css"
   },
   "author": "Nadeem Howlader",
   "license": "ISC",
