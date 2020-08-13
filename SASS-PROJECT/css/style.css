@@ -335,7 +335,17 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 3px;
-  padding: 6rem; }
+  padding: 6rem;
+  font-size: 1.6rem; }
+  .story__shape {
+    background-color: orangered;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); }
 
 .header {
   height: 95vh;
