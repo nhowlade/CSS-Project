@@ -5,7 +5,7 @@
     background-color: $color-white;
     border-radius: 3px;
     padding: 6rem;
-    padding-left: 9ren;
+    padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
@@ -26,6 +26,9 @@
 
     &__img {
         height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all 0.5s;
     }
     &__text {
         transform: skewX(12deg);
@@ -48,5 +51,10 @@
     &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }
