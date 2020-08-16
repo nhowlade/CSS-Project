@@ -9,6 +9,19 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        background-color: orangered;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+    }
+}
+
+/* 
     & > * {
         transform: skewX(12deg);
     }
@@ -56,5 +69,4 @@
     &:hover &__img {
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
-    }
-}
+    }*/
