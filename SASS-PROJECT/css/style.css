@@ -1,3 +1,11 @@
+/*
+0 - 600px:  Phone
+600-900px:  Tablet portrait
+900-1200px: Tablet landscape
+1200-1800 is where normal styles apply
+1800px +:   Big desktop
+
+*/
 @keyframes moveInLeft {
   /* The percentage signs are used to help us with the timeline for the animation sequence */
   0% {
@@ -39,6 +47,12 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
