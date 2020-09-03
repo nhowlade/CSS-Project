@@ -8,6 +8,9 @@
 
 html {
     font-size: 62.5%;
+    @include respond(phone) {
+        font-size: 50%;
+    }
 
     @include respond(tab-land) {
         font-size: 56.25%;
@@ -24,4 +27,9 @@ html {
 
 body {
     box-sizing: border-box; /*padding of the box are no longer added to the total width or height of the box */
+    padding: 3rem; /* border around the entire body */
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
