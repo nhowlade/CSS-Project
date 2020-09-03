@@ -50,28 +50,31 @@ html {
   @media (max-width: 600px) {
     html {
       font-size: 50%; } }
-  @media (max-width: 900px) {
-    html {
-      font-size: 50%; } }
   @media (max-width: 1200px) {
     html {
       font-size: 56.25%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
   @media (min-width: 1800px) {
     html {
       font-size: 75%; } }
 
 body {
   box-sizing: border-box;
-  /*padding of the box are no longer added to the total width or height of the box */ }
+  /*padding of the box are no longer added to the total width or height of the box */
+  padding: 3rem;
+  /* border around the entire body */ }
+  @media (max-width: 900px) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  /* border around the entire body */ }
+  color: #777; }
 
 .heading-primary {
   color: white;
@@ -86,6 +89,10 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
+    @media (max-width: 600px) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -93,6 +100,9 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
     /*Shorthand*/ }
+    @media (max-width: 600px) {
+      .heading-primary--sub {
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -102,8 +112,14 @@ body {
   background-image: linear-gradient(to right, #55c57a, #28b485);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
+  @media (max-width: 900px) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
