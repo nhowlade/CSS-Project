@@ -14,7 +14,11 @@ const routeDir = require("./helpers/path");
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 
-db.execute("SELECT * FROM products").then().catch();
+db.execute("SELECT * FROM products")
+    .then(() => {})
+    .catch((err) => {
+        console.log(err);
+    });
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
