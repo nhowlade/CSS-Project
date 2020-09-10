@@ -303,6 +303,9 @@ body {
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.3s; }
+  @media (max-width: 900px) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -310,6 +313,9 @@ body {
     background-image: linear-gradient(to right, #55c57a, #28b485);
     -webkit-background-clip: text;
     color: transparent; }
+    @media (max-width: 900px) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
@@ -909,7 +915,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 900px) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
