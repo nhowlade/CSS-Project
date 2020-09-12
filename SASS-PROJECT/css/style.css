@@ -428,6 +428,8 @@ body {
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
       .card:hover .card__side--front {
         transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
       .card__cta {
         position: relative;
         color: white;
@@ -439,7 +441,7 @@ body {
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
-        font-size: 6rem; } }
+        font-size: 4rem; } }
 
 .story {
   width: 75%;
