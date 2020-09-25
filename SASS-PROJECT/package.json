@@ -1,15 +1,16 @@
 {
-  "name": "natours",
-  "version": "1.0.0",
-  "description": "Landing page for natours",
-  "main": "index.js",
-  "scripts": {
-    "sass": "node-sass sass/main.scss css/style.css"
-  },
-  "author": "Nadeem Howlader",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.14.1"
-  },
-  "dependencies": {}
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Landing page for natours",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass sass/main.scss css/style.css",
+        "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+    },
+    "author": "Nadeem Howlader",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.14.1"
+    },
+    "dependencies": {}
 }
