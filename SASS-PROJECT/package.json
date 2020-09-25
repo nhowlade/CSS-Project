@@ -5,11 +5,13 @@
     "main": "index.js",
     "scripts": {
         "sass": "node-sass sass/main.scss css/style.css",
-        "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+        "compile": "node-sass sass/main.scss css/style.comp.css",
+        "concat": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css"
     },
     "author": "Nadeem Howlader",
     "license": "ISC",
     "devDependencies": {
+        "concat": "^1.0.3",
         "node-sass": "^4.14.1"
     },
     "dependencies": {}
