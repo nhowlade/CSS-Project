@@ -7,7 +7,7 @@
         "sass": "node-sass sass/main.scss css/style.css",
         "compile": "node-sass sass/main.scss css/style.comp.css",
         "concat": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-        "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css"
+        "prefix": "postcss --use autoprefixer -b 'last five versions' css/style.concat.css -o css/style.prefix.css"
     },
     "author": "Nadeem Howlader",
     "license": "ISC",
@@ -15,6 +15,7 @@
         "autoprefixer": "^10.0.0",
         "concat": "^1.0.3",
         "node-sass": "^4.14.1",
+        "postcss": "^8.1.0",
         "postcss-cli": "^8.0.0"
     },
     "dependencies": {}
