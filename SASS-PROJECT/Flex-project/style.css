@@ -7,6 +7,10 @@
 .container {
     background-color: #ccc;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
@@ -15,4 +19,8 @@
     margin: 30px;
     color: #fff;
     font-size: 40px;
+}
+
+.i2 {
+    height: 200px;
 }
