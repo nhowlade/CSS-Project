@@ -8,16 +8,18 @@
     background-color: #ccc;
     padding: 10px;
     display: flex;
+    height: 1500px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .item {
     background-color: #f1425d;
     padding: 10px;
-    margin: 30px;
+    margin: 5px;
     color: #fff;
     font-size: 40px;
 }
@@ -26,6 +28,10 @@
     height: 200px;
 }
 
+.i3 {
+    order: 1;
+    flex: 1;
+}
 .i4 {
     font-size: 70px;
 }
