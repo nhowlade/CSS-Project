@@ -4,7 +4,6 @@
 }
 
 .search {
-    background-color: orange;
     flex: 0 0 40%;
 
     display: flex;
@@ -60,7 +59,23 @@
 
 .user-nav {
     background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
     &__icon-box {
+        display: flex;
+        align-items: center;
     }
 
     &__icon {
