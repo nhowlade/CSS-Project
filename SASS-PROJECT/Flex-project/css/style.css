@@ -59,6 +59,7 @@ body {
   min-height: 50rem; }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
@@ -83,7 +84,10 @@ body {
 
 .search {
   background-color: orange;
-  flex: 0 0 40%; }
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -94,11 +98,16 @@ body {
     border-radius: 100px;
     width: 90%;
     transition: all 0.2s;
-    margin-right: -3.5rem; }
+    margin-right: -3.25rem; }
     .search__input:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3); }
+    .search__input::-webite-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4); }
+  .search__input:focus + .search__button {
+    background-color: var(--color-grey-light-3); }
   .search__button {
     border: none;
     background-color: var(--color-grey-light-2); }
@@ -114,7 +123,8 @@ body {
   background-color: greenyellow; }
   .user-nav__icon {
     height: 2.25rem;
-    width: 2.25rem; }
+    width: 2.25rem;
+    fill: var(--color-grey-dark-3); }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%; }
