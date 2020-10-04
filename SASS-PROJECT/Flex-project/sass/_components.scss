@@ -1,13 +1,31 @@
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 .search {
     background-color: orange;
+    flex: 0 0 40%;
     &__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: var(--color-grey-light-2);
+        color: inherit;
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all 0.2s;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
     }
 
     &__button {
+        border: none;
     }
 
     &__icon {

@@ -63,7 +63,8 @@ body {
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   display: flex; }
@@ -77,10 +78,26 @@ body {
   flex: 1; }
 
 .logo {
-  height: 3.25rem; }
+  height: 3.25rem;
+  margin-left: 3rem; }
 
 .search {
-  background-color: orange; }
+  background-color: orange;
+  flex: 0 0 40%; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    color: inherit;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
   .search__icon {
     height: 2rem;
     width: 2rem; }
