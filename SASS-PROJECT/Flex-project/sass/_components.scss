@@ -1,6 +1,6 @@
 .logo {
     height: 3.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .search {
@@ -54,11 +54,11 @@
     &__icon {
         height: 2rem;
         width: 2rem;
+        fill: var(--color-grey-dark-3);
     }
 }
 
 .user-nav {
-    background-color: greenyellow;
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -67,6 +67,8 @@
         padding: 0 2rem;
         cursor: pointer;
         height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     & > *:hover {
@@ -74,27 +76,33 @@
     }
 
     &__icon-box {
-        display: flex;
-        align-items: center;
+        position: relative;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
-        fill: var(--color-grey-dark-3);
+        fill: var(--color-grey-dark-2);
     }
 
     &__notification {
-    }
-
-    &__user {
+        font-size: 0.8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 500%;
+        background-color: var(--color-primary);
+        color: white;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
+        margin-right: 1rem;
     }
 }
