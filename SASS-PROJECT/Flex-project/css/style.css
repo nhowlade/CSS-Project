@@ -176,8 +176,10 @@ body {
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s 0.2s; }
-  .side-nav__item:hover::before {
+    transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+  .side-nav__item--active::before {
+    background-color: var(--color-primary-light); }
+  .side-nav__item:hover::before, .side-nav__item--active::before {
     transform: scaleY(1);
     width: 100%; }
   .side-nav__link:link, .side-nav__link:visited {
@@ -187,7 +189,9 @@ body {
     display: block;
     padding: 1.5rem 3rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    z-index: 10; }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;

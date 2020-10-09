@@ -129,10 +129,16 @@
         width: 3px;
         background-color: var(--color-primary);
         transform: scaleY(0);
-        transition: transform 0.2s, width 0.4s 0.2s;
+        transition: transform 0.2s, width cubic-bezier(1, 0, 0, 1) 0.2s,
+            background-color 0.1s;
     }
 
-    &__item:hover::before {
+    &__item--active::before {
+        background-color: var(--color-primary-light);
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
         transform: scaleY(1);
         width: 100%;
     }
@@ -146,6 +152,8 @@
         padding: 1.5rem 3rem;
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 10;
     }
 
     &__icon {
