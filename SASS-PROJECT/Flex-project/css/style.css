@@ -27,6 +27,7 @@ Grey dark 3: #999
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --line: 1px solid var(--color-grey-light-2); }
 
 * {
@@ -91,7 +92,10 @@ body {
 
 .description {
   flex: 0 0 60%;
-  margin-right: 4.5rem; }
+  margin-right: 4.5rem;
+  background-color: #ffff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem; }
 
 .user-reviews {
   flex: 1; }
