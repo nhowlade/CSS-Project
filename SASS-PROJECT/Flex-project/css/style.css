@@ -79,6 +79,9 @@ body {
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.75rem) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -97,6 +100,9 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.75rem) {
+    .detail {
+      padding: 3rem; } }
 
 .description {
   flex: 0 0 60%;
@@ -104,6 +110,10 @@ body {
   background-color: #ffff;
   box-shadow: var(--shadow-light);
   padding: 3rem; }
+  @media only screen and (max-width: 56.75rem) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -203,10 +213,20 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.75rem) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+      @media only screen and (max-width: 56.75rem) {
+        .side-nav__item:not(:last-child) {
+          margin: 0; } }
+    @media only screen and (max-width: 56.75rem) {
+      .side-nav__item {
+        flex: 1; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -232,6 +252,10 @@ body {
     align-items: center;
     position: relative;
     z-index: 10; }
+    @media only screen and (max-width: 56.75rem) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -243,6 +267,9 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+  @media only screen and (max-width: 56.75rem) {
+    .legal {
+      display: none; } }
 
 .gallery {
   display: flex; }
@@ -354,6 +381,8 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -361,7 +390,7 @@ body {
     border-radius: 50%;
     border: 3px solid #ffff; }
     .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .review {
   background-color: #ffff;
@@ -370,6 +399,10 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.75rem) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -409,6 +442,9 @@ body {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.75rem) {
+    .cta {
+      padding: 2.5rem 0; } }
   .cta__book-now {
     font-size: 1.5rem;
     font-weight: 300;
