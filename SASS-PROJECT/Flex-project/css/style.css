@@ -42,7 +42,7 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screeb and (max-width: 68.75rem) {
+  @media only screeb and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
 
@@ -62,7 +62,7 @@ body {
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     .container {
       margin: 0;
       max-width: 100%;
@@ -79,7 +79,7 @@ body {
 
 .content {
   display: flex; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .content {
       flex-direction: column; } }
 
@@ -100,9 +100,12 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   flex: 0 0 60%;
@@ -110,7 +113,7 @@ body {
   background-color: #ffff;
   box-shadow: var(--shadow-light);
   padding: 3rem; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
@@ -213,7 +216,7 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .side-nav {
       display: flex;
       margin: 0; } }
@@ -221,10 +224,10 @@ body {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
-      @media only screen and (max-width: 56.75rem) {
+      @media only screen and (max-width: 56.75em) {
         .side-nav__item:not(:last-child) {
           margin: 0; } }
-    @media only screen and (max-width: 56.75rem) {
+    @media only screen and (max-width: 56.75em) {
       .side-nav__item {
         flex: 1; } }
   .side-nav__item::before {
@@ -252,7 +255,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 10; }
-    @media only screen and (max-width: 56.75rem) {
+    @media only screen and (max-width: 56.75em) {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
@@ -267,7 +270,7 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .legal {
       display: none; } }
 
@@ -399,7 +402,7 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .review {
       padding: 2rem;
       margin-bottom: 3rem; } }
@@ -442,7 +445,7 @@ body {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
-  @media only screen and (max-width: 56.75rem) {
+  @media only screen and (max-width: 56.75em) {
     .cta {
       padding: 2.5rem 0; } }
   .cta__book-now {
