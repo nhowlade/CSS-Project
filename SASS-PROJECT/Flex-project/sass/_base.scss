@@ -38,6 +38,7 @@ $bp-largest: 75em;
 $bp-large: 68.75em;
 $bp-medium: 56.75em;
 $bp-small: 37.5em;
+$bp-smallest: 31.25em;
 
 * {
     margin: 0;
@@ -54,7 +55,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
 
-    @media only screeb and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-large) {
         font-size: 50%;
     }
 }
